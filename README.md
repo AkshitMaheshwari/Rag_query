@@ -1,28 +1,41 @@
 # 🔍 RAG-Based Conversational Chatbot with Hybrid Search (FAISS + PDF Querying)
 
-This is a **Retrieval-Augmented Generation (RAG)** based chatbot built using **FAISS** as the vector database, capable of **chatting with PDF documents**. The system performs **hybrid search (semantic + keyword matching)** to provide accurate, context-rich answers from uploaded PDFs.
+This is a **Retrieval-Augmented Generation (RAG)** based chatbot built using **LangChain**, **FAISS**, and **HuggingFace Embeddings**, capable of **chatting with PDF documents**. It performs **hybrid search** (semantic + keyword matching) and uses an LLM backend like OpenAI, Groq, Mistral, or Ollama to generate accurate, context-aware responses.
+
+👉 **[🚀 Try the App Live](https://ragquery-cwhb9ynpcverkavpuppmcr.streamlit.app/)**
 
 ---
 
 ## 🚀 Features
 
 - 📄 **PDF Upload & Parsing**  
-  Upload any PDF file; the content is parsed and embedded using HuggingFace embeddings.
+  Upload any PDF; it’s parsed, chunked, and embedded using HuggingFace models.
 
-- 🔎 **Hybrid Search (Semantic + Keyword)**  
-  Performs a combination of dense vector search and traditional keyword matching.
+- 🔎 **Hybrid Search**  
+  Combines dense vector (semantic) and keyword-based retrieval.
 
 - 🧠 **Conversational Memory**  
-  Keeps track of the ongoing conversation with context awareness.
+  Context-aware chat that remembers prior conversation history.
 
 - ⚙️ **FAISS Vector Store**  
-  Uses FAISS for blazing-fast local vector similarity search.
+  Fast local vector similarity search using FAISS.
 
-- 🗣️ **LLM-Powered Responses**  
-  Uses OpenAI (or Groq/Mistral/Ollama) to generate intelligent responses.
+- 🗣️ **LLM-Powered Answers**  
+  Works with OpenAI, Groq (LLaMA 3), Ollama, and Mistral models.
 
-- Also Tested Pdf data retrieval with:
-  - ✅ **AstraDB** (Cassandra-based cloud vector DB)
-  - ✅ **NVIDIA NIM (NVIDIA Inference Microservices)** for enterprise-grade inference
+- ✅ **Tested Integrations**  
+  - **AstraDB** (Cassandra-based cloud vector DB)  
+  - **NVIDIA NIM** (Enterprise-grade inference APIs)
+
+---
+
+## 🛠️ Tech Stack
+
+- `LangChain`
+- `Streamlit`
+- `FAISS`
+- `HuggingFace Embeddings`
+- `Groq / OpenAI / Mistral / Ollama`
+- `PyPDFLoader` for document parsing
 
 ---
