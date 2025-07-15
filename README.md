@@ -1,6 +1,6 @@
 # 🔍 RAG-Based Conversational Chatbot with Hybrid Search (FAISS + PDF Querying)
 
-This is a **Retrieval-Augmented Generation (RAG)** based chatbot built using **LangChain**, **FAISS**, and **HuggingFace Embeddings**, capable of **chatting with PDF documents**. It performs **hybrid search** (semantic + keyword matching) and uses an LLM backend like OpenAI, Groq, Mistral, or Ollama to generate accurate, context-aware responses.
+This is a **Retrieval-Augmented Generation (RAG)** based chatbot built using **LangChain**, **FAISS**, and **HuggingFace Embeddings**, capable of **chatting with PDF documents**. It performs **hybrid search** (semantic + keyword matching) and uses Open AI LLM backend.
 
 👉 **[🚀 Try the App Live](https://ragquery-cwhb9ynpcverkavpuppmcr.streamlit.app/)**
 
@@ -35,7 +35,7 @@ This is a **Retrieval-Augmented Generation (RAG)** based chatbot built using **L
 - `Streamlit`
 - `FAISS`
 - `HuggingFace Embeddings`
-- `Groq / OpenAI / Mistral / Ollama`
+- `OpenAI `
 - `PyPDFLoader` for document parsing
 
 ---
